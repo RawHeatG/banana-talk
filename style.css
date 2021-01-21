@@ -37,8 +37,11 @@ button {
     }  
 
 .output{
-    margin: 1rem 20%;
+    text-align: center;
+    display: block;
+    margin: auto;
+
 }
 .txt-output{
-    padding: 10% 40%;
+    padding: 2rem;
 }
