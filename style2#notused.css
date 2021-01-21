@@ -9,45 +9,54 @@ html {
 
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
 textarea{
     display:inline-block;
     font-size: 2rem;
     text-align: center;
+    width: 16rem;
+    height: 6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.heading{
-    text-align: center;
-    padding: 2rem;
+.right-align{
+    text-align: right;
 }
+.heading{
+    text-align: right;
+    padding: 0.5rem 1rem 1rem 1rem;
+    background-color: #f18973;
+    display: inline-block;
+}
+
 
 #txt-input{
-    display: block;
-    margin: auto;
     padding: 1rem 10%;
 }
 
 .input{
+    text-align: right;
     margin: 2rem;
 }
 
+.button{
+    padding: 0rem 20% 1rem 0rem;
+}
 #btn-translate{
-    display: block;
-    margin: auto;
+    float: right;
+    
 }
 button {
-    padding: 0.5rem 3rem;
     border-radius: 4px;
     font-size: 20px;
     background-color: #ffffff;
+    display: block;
     }  
 
 .output{
-    text-align: center;
-    display: block;
-    margin: auto;
-
-}
-.txt-output{
-    padding: 2rem;
+    text-align: right;
+    padding: 0rem 12% 1rem 0rem;
 }

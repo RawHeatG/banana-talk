@@ -1,9 +1,7 @@
 var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector('#txt-input');
-var txtOutputHodor = document.querySelector('#txt-output-hodor');
-var txtOutputGroot = document.querySelector('#txt-output-groot');
-var hodorURL = "https://api.funtranslations.com/translate/hodor.json"
-var grootURL = "https://api.funtranslations.com/translate/groot.json"
+var txtOutput = document.querySelector('#txt-output');
+var hodorURL = "https://api.funtranslations.com/translate/minion.json"
 
 function getTranslationURL(input, serverURL){
     return serverURL + "?" + "text=" + input;
@@ -20,14 +18,7 @@ function clickEventHandler() {
         .then(response => response.json())
         .then(json => {
             var translatedText = json.contents.translated;
-            txtOutputHodor.innerText = translatedText;
-        }) 
-    
-    fetch(getTranslationURL(inputText, grootURL))
-        .then(response => response.json())
-        .then(json => {
-            var translatedText = json.contents.translated;
-            txtOutputGroot.innerText = translatedText;
+            txtOutput.innerText = translatedText;
         })
         .catch(errorHandler);
 }
